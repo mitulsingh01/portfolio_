@@ -25,7 +25,7 @@ contactForm.addEventListener('submit', (e) => {
   const email = document.getElementById('email').value;
   const message = document.getElementById('message').value;
 
-  const mailtoLink = `mailto:mitul.singh00.ms@gmail.com?subject=Contact Form Submission&body=${encodeURIComponent(message)}`;
+  const mailtoLink = `mailto:mitul.singh00.ms@gmail.com?subject=Contacting you regarding ${encodeURIComponent(message)}`;
 
   window.location.href = mailtoLink;
 
