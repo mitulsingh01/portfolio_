@@ -45,3 +45,11 @@ githubLinks.forEach(link => {
     e.stopPropagation();
   });
 });
+
+// Resume button
+const resumeLink = document.getElementById('resume-link');
+resumeLink.addEventListener('click', () => {
+  const fileId = '1cJpWcZqRLgQ8TtW_Mv-ZjKbO19W2g_vp'; // Replace with your actual file ID from the sharing link
+  const resumeUrl = `https://drive.google.com/file/d/${fileId}/view?usp=sharing`;
+  window.open(resumeUrl);
+});
