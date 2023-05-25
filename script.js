@@ -25,19 +25,11 @@ contactForm.addEventListener('submit', (e) => {
   const email = document.getElementById('email').value;
   const message = document.getElementById('message').value;
 
-  const formData = {
-    name,
-    email,
-    message
-  };
+  const mailtoLink = `mailto:mitul.singh00.ms@gmail.com?subject=Contact Form Submission&body=${encodeURIComponent(message)}`;
 
-  if (typeof Storage !== 'undefined') {
-    localStorage.setItem('formData', JSON.stringify(formData));
-    alert('Form data has been stored successfully!');
-    contactForm.reset();
-  } else {
-    alert('Sorry, your browser does not support local storage.');
-  }
+  window.location.href = mailtoLink;
+
+  contactForm.reset();
 });
 
 // ... 
