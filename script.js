@@ -25,9 +25,10 @@ contactForm.addEventListener('submit', (e) => {
   const email = document.getElementById('email').value;
   const message = document.getElementById('message').value;
 
-  const subject = encodeURIComponent("Regarding ");
-  const body = encodeURIComponent(message);
+  const subject = encodeURIComponent("Regarding ...");
+  const body = encodeURIComponent(`Message: ${message}`);
   const mailtoLink = `mailto:mitul.singh00.ms@gmail.com?subject=${subject}&body=${body}`;
+  
   
   window.location.href = mailtoLink;
 
