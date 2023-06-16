@@ -53,3 +53,4 @@ resumeLink.addEventListener('click', () => {
   const resumeUrl = `https://drive.google.com/file/d/${fileId}/view?usp=sharing`;
   window.open(resumeUrl);
 });
+
