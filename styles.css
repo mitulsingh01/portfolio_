@@ -161,7 +161,33 @@
   .project p {
     color: #777;
   }
-
+  .preview-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .preview-container {
+    margin-bottom: 20px;
+    background-color: #DDE6ED;
+    padding: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  
+    width: 48%;
+    height: 600px;
+    border: 1px solid #ccc;
+  }
+  
+  .preview-container iframe {
+    width: 100%;
+    height: calc(100% - 40px); /* Adjust the padding value (20px) to your desired padding */
+  }
+  
+  
+  
+  .preview-container h2 {
+    margin-top: 0;
+  }
   
   #contact {
     background-color: #fff;
