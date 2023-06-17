@@ -54,3 +54,14 @@ resumeLink.addEventListener('click', () => {
   window.open(resumeUrl);
 });
 
+// Leetcode stats
+fetch('https://leetcode.com/api/user_info/user5624o')
+  .then(response => response.json())
+  .then(data => {
+    // Handle the response and update your website with the stats
+    console.log(data);
+  })
+  .catch(error => {
+    // Handle any errors
+    console.error('Error:', error);
+  });
