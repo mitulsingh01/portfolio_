@@ -48,12 +48,15 @@ githubLinks.forEach(link => {
 
 // Resume button
 //https://drive.google.com/file/d/1rxmOrXk105sU5mDIXAZpaaLMBBcDgKah/view?usp=sharing
+
 const resumeLink = document.getElementById('resume-link');
-resumeLink.addEventListener('click', () => {
+resumeLink.addEventListener('click', (e) => {
+  e.preventDefault();
   const fileId = '1rxmOrXk105sU5mDIXAZpaaLMBBcDgKah'; // Replace with your actual file ID from the sharing link
   const resumeUrl = `https://drive.google.com/file/d/${fileId}/view?usp=sharing`;
-  window.open(resumeUrl);
+  window.open(resumeUrl, '_blank');
 });
+
 
 // Leetcode stats
 fetch('https://leetcode.com/api/user_info/user5624o')
